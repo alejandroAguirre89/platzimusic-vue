@@ -1,7 +1,7 @@
 import config from './config'
 
 const {apiKey} = config
-const URL = `http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=:country&api_key=${apiKey}&format=json`
+const URL = `https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=:country&api_key=${apiKey}&format=json`
 
 /* Obtiene el top con la información de los artistas para un pais en especifico*/
 export default function getArtist(country)
